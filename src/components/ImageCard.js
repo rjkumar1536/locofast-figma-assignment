@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './ShowModel.css'
-import M from 'materialize-css';
+// import M from 'materialize-css';
 import {connect} from 'react-redux';
 import './ImageCard.css'
 
