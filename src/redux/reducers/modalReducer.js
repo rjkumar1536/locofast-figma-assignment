@@ -41,12 +41,14 @@ const rootReducer = (state = initialState, action)=>{
                 nextClicked : false
             }
             case 'ASSIGN_FACTORY' : 
-            state.data.push({factoryName : state.factoryName,
+            let newData = state.data.slice();
+            newData.push({factoryName : state.factoryName,
                 designName : state.designName,
                 quantity : state.quantity,
                 fileName : state.fileName})
             return {
-                data : state.data,
+                ...state,
+                data : newData,
                 inventory : state.inventory - state.quantity,
                 factoryName : "",
                 designName : "",

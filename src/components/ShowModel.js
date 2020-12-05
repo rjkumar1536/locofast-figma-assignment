@@ -81,7 +81,7 @@ class ShowModel extends Component {
                                     <h6 className = "label">Factory<sup>*</sup></h6>
                                     {this.props.nextClicked ? <p>{this.props.factoryName}</p> : 
                                     <select className="browser-default" id = "factoryName" onChange = {(event)=>{this.handleSelect(event)}}>
-                                        <option value={this.props.factoryName} disabled>Select factory</option>
+                                        <option value={this.props.factoryName} disabled selected>Select factory</option>
                                         <option value="Amaya Creations">Amaya Creations</option>
                                         <option value="Jara">Jara</option>
                                         <option value="Manyavara">Manyavara</option>
@@ -90,7 +90,7 @@ class ShowModel extends Component {
                                     <div className="assign-to-design">
                                         <h6>Assign for design<sup>*</sup></h6>
                                         <select className="icons" id = "designName" onChange = {(event)=>{this.handleSelect(event)}} disabled = {this.props.nextClicked  ? true : false}>
-                                            <option value={this.props.designName} disabled >Choose your option</option>
+                                            <option value={this.props.designName} disabled selected>Choose your option</option>
                                             <option value="Design name 1" data-icon="/images/alexi-romano-CCx6Fz_CmOI-unsplash.jpg" className="left circle black-text">Design name 1</option>
                                             <option value="Design name 2" data-icon="/images/artificial-photography-vB5qtt8X4NA-unsplash.jpg" className="left circle">Design name 2</option>
                                             <option value="Design name 3" data-icon="/images/freestocks-_3Q3tsJ01nc-unsplash.jpg" className="right circle">Design name 3</option>

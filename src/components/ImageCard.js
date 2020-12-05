@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './ShowModel.css'
-// import M from 'materialize-css';
+import M from 'materialize-css';
 import {connect} from 'react-redux';
 import './ImageCard.css'
 
 class ImageCard extends Component {
     render() {
+        console.log(this.props.data)
         return (
             <div className="card-flex">
                     {this.props.data.map((item, index)=>
